@@ -34,6 +34,7 @@ $(function() {
 
         $('.mainContent').html(table);
 
+    //Ver.1 Not Advisable
         // $('.carData').click ( function (event) {
         //     event.preventDefault();
         //     alert(event.target.id);
@@ -42,9 +43,15 @@ $(function() {
 
     }
 
-    $(document).on('click', '.carData',  function(event){
-        alert(event.target.id);
+    //Ver.2
+    $(document).on('click', '.carData',  function(){
+        alert($(this).attr('id'));
     });
+
+    //Ver.3
+    // $(document).on('click', '.carData',  function(event){
+    //     alert(event.target.id);
+    // });
 
 })
 

@@ -12,7 +12,7 @@ h1{
     color: #292e2b;
 }
 
-button{
+.block{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,11 +28,42 @@ button{
     border-radius: 30px;
     border: none;
 }
-button:active{
+.block:active{
     background-color: #423f3f;
     color: #8e656b;
     cursor: auto;
 }
+.carData{
+    background: #999999;
+    border-color: #787878 #757575 #666666;
+    background-image: -webkit-linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
+    background-image: -moz-linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
+    background-image: -o-linear-gradient(top, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
+    background-image: linear-gradient(to bottom, #adadad 0%, #a6a6a6 50%, #999999 50%, #8e7b7c 100%);
+    font-size: 22px;
+    border-radius: 8px;
+    border: none;
+}
+.carData:before {
+    background: #b6afaf;
+    background-image: -webkit-linear-gradient(top, #8b8484, #c2b7b7);
+    background-image: -moz-linear-gradient(top, #8b8484, #c2b7b7);
+    background-image: -o-linear-gradient(top, #8b8484, #c2b7b7);
+    background-image: linear-gradient(to bottom, #8b8484, #c2b7b7);
+}
+
+.carData:active {
+    background: #a6a6a6;
+    background-image: -webkit-linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
+    background-image: -moz-linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
+    background-image: -o-linear-gradient(top, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
+    background-image: linear-gradient(to bottom, #8a7577 0%, #a1a1a1 60%, #a6a6a6 100%);
+}
+
+.carData:active:after {
+    border-color: #a6a6a6;
+}
+
 table{
     margin: 15% auto;
     background-color: #310e0e;

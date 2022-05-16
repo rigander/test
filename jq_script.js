@@ -34,13 +34,17 @@ $(function() {
 
         $('.mainContent').html(table);
 
-        $('.carData').click ( function (event) {
-            event.preventDefault();
-            alert(event.target.id);
-            }
-        );
+        // $('.carData').click ( function (event) {
+        //     event.preventDefault();
+        //     alert(event.target.id);
+        //     }
+        // );
 
     }
+
+    $(document).on('click', '.carData',  function(event){
+        alert(event.target.id);
+    });
 
 })
 
